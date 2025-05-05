@@ -1,0 +1,24 @@
+read -p "enter marks of linux" linux
+
+read -p "enter marks of python" python
+
+read -p "enterv marks of dbms" dbms
+
+avg=$(((linux+python+dbms)/3))
+
+echo "$avg"
+if((avg>=70))
+then
+echo "A+"
+elif((avg>=60 && avg <70))
+then 
+echo "A"
+elif((avg>=50 && avg<60))
+then
+echo "B"
+elif((avg>=40 && avg <50))
+then
+echo "c"
+else
+echo "F"
+fi
